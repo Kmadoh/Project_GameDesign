@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5977466644323551056}
   - component: {fileID: 5977466644323551057}
   - component: {fileID: 5977466644323551058}
+  - component: {fileID: 1264448678155422887}
   m_Layer: 0
   m_Name: Sol
   m_TagString: Untagged
@@ -344,3 +345,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &1264448678155422887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977466644323551059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.234667, y: 1, z: 0.5}
+  m_Center: {x: 10.281089, y: 0.54811287, z: -1.6857204}

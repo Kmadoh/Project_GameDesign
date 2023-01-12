@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4367932288300815954}
   - component: {fileID: 1570665130069587107}
   - component: {fileID: 9091436733558382491}
-  - component: {fileID: 2083642447488957462}
-  - component: {fileID: 1558853196173213201}
-  - component: {fileID: 8560168154071288740}
+  - component: {fileID: 2661544813351896227}
+  - component: {fileID: 6424140797754220099}
+  - component: {fileID: 1666846130}
+  - component: {fileID: 1666846123}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -30,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203205873164932761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.325283, y: 0, z: -12.947661}
-  m_LocalScale: {x: 1.5127, y: 1.5127, z: 1.5127}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8870931, y: 1.8870931, z: 1.8870931}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2189,7 +2190,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2164
+  m_VersionIndex: 1661
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2257,7 +2258,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2266,29 +2267,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2083642447488957462
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203205873164932761}
-  m_Mesh: {fileID: 0}
---- !u!64 &1558853196173213201
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203205873164932761}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!114 &8560168154071288740
+--- !u!114 &2661544813351896227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2297,8 +2276,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203205873164932761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3ecaf974284ed46b8c1b731aa478be, type: 3}
+  m_Script: {fileID: 11500000, guid: 96d808e5f145f6042ada537ca785f52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreModificationAmount: 1
+  scoreManager: {fileID: 0}
+--- !u!114 &6424140797754220099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203205873164932761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33751a43147047d4697f435544f8be98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   useTag: 1
-  tagName: 
+  tagName: Player
+--- !u!65 &1666846130
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203205873164932761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7960434, y: 0.8786863, z: 0.14679813}
+  m_Center: {x: 0.39802122, y: 0.43934327, z: -0.0733995}
+--- !u!33 &1666846123
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203205873164932761}
+  m_Mesh: {fileID: 0}
