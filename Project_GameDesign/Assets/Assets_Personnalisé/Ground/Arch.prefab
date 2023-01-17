@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 8616071709629399755}
   - component: {fileID: 8616071709629399754}
   - component: {fileID: 8616071709629399753}
-  - component: {fileID: 8616071709629399752}
+  - component: {fileID: 6710625432055375344}
+  - component: {fileID: 204431254956956898}
+  - component: {fileID: 5405850903551687399}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -488,7 +490,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1614
+  m_VersionIndex: 1617
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -546,7 +548,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: da520f92f9406814592ea33ac64d8549, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -576,8 +578,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8616071709629399767}
   m_Mesh: {fileID: 0}
---- !u!64 &8616071709629399752
-MeshCollider:
+--- !u!114 &6710625432055375344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616071709629399767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d808e5f145f6042ada537ca785f52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreModificationAmount: 5
+  scoreManager: {fileID: 0}
+--- !u!114 &204431254956956898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616071709629399767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33751a43147047d4697f435544f8be98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useTag: 1
+  tagName: Player
+--- !u!65 &5405850903551687399
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -586,7 +616,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.18954144, y: 0.5847561, z: 0.76018137}
+  m_Center: {x: 0, y: 0, z: 0.1349509}
