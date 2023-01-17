@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 1030125948639517070}
   - component: {fileID: 3896716404621929533}
   - component: {fileID: 5514027523683515558}
+  - component: {fileID: 163986494820170539}
   m_Layer: 0
   m_Name: Pique
   m_TagString: Untagged
@@ -392,3 +393,23 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &163986494820170539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905293086473144769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6bf345a734d934480925f4a254e2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportPoint: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+  useTag: 0
+  tagName: Player
+  requireInput: 0
+  inputName: Fire1
+  displayTeleportPoint: 1
+  inputChoiceIndex: 0
