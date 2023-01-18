@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 3195639430321395347}
   - component: {fileID: 3195639430321395346}
   - component: {fileID: 3195639430321395345}
-  - component: {fileID: 3195639430321395344}
   - component: {fileID: 3195639430321395359}
   - component: {fileID: 3195639430321395358}
   - component: {fileID: 3195639430321395357}
   - component: {fileID: 3195639430321395356}
+  - component: {fileID: 1795505688228863471}
   m_Layer: 0
   m_Name: Personnage
   m_TagString: Player
@@ -112,19 +112,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 2
---- !u!65 &3195639430321395344
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3195639430321395355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3195639430321395359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +252,20 @@ MonoBehaviour:
   revertAfterCooldown: 0.5
   displayDebugInfo: 0
   inputChoiceIndex: 0
+--- !u!136 &1795505688228863471
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195639430321395355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.87, z: 0.07}
 --- !u!1001 &7479878606709870035
 PrefabInstance:
   m_ObjectHideFlags: 0
